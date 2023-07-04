@@ -14,6 +14,7 @@ import {SafeAreaProvider} from 'react-native-safe-area-context';
 
 import Homepage from './pages/Homepage';
 import IndividualProduct from './pages/Product';
+import CameraPage from './pages/CameraPage';
 const Stack = createNativeStackNavigator();
 function App(): JSX.Element {
   return (
@@ -22,6 +23,7 @@ function App(): JSX.Element {
         <Stack.Navigator>
           <Stack.Screen name="Home" component={Homepage} />
           <Stack.Screen name="Product" component={IndividualProduct} />
+          <Stack.Screen name="Camera" component={CameraPage} />
         </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaProvider>

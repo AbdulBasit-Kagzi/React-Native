@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View, Button} from 'react-native';
 import React from 'react';
 import UserCard from '../components/Card';
 
@@ -8,6 +8,10 @@ export default function Homepage({navigation}) {
   return (
     <View style={styles.sectionContainer}>
       <Text style={styles.sectionTitle}>Homepage</Text>
+      <Button
+        title="Open Camera"
+        onPress={() => navigation.navigate('Camera')}
+      />
       <UserCard navigation={navigation} />
     </View>
   );
